@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+	<link rel="icon" href="favicon.png">
+		
+		
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+	
+	<link rel="stylesheet" href="bootstrap.min.css">
+	
+	<link rel="stylesheet" href="nice-select.css">
+	
+	<link rel="stylesheet" href="font-awesome.min.css">
+	
+	<link rel="stylesheet" href="icofont.css">
+	<!-- Slicknav -->
+	<link rel="stylesheet" href="slicknav.min.css">
+	<!-- Owl Carousel CSS -->
+	<link rel="stylesheet" href="owl-carousel.css">
+	<!-- Datepicker CSS -->
+	<link rel="stylesheet" href="datepicker.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="animate.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="magnific-popup.css">
+	
+	<!-- Medipro CSS -->
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="responsive.css">
+	<link rel="stylesheet" href="service_style.css">
+	
+</head>
+	<div class="breadcrumbs overlay">
+		<div class="container">
+			<div class="bread-inner">
+				<div class="row">
+					<div class="col-12">
+						<h2>Services</h2>
+						<ul class="bread-list">
+							<li><a href="home.html">Home</a></li>
+							<li><i class="icofont-simple-right"></i></li>
+							<li class="active">Services</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Breadcrumbs -->
+
+		<div class="patient_container">
+			<h1>Patient Information Form</h1>
+			<form action="#" method="post">
+				<label for="patientID">Patient ID:</label>
+				<input type="text" id="patientID" name="patientID" required>
+
+				<label for="fullName">Full Name:</label>
+				<input type="text" id="fullName" name="fullName" required>
+
+				<label for="phoneNumber">Phone Number:</label>
+				<input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+					placeholder="Format: 12345-67890" required>
+
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" name="dob" required>
+				
+				<label for="gender">Gender:</label>
+				<select style="display: block;" id="gender" name="gender" required>
+					<option value="">Select</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+				<br><br>
+				<label for="password">Password:</label>
+				<input type="password" id="password" name="password" required>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+		{% endblock %}
